@@ -55,6 +55,7 @@
         @include media-breakpoint-down(xl) {
             justify-content: end;
             gap: 20px;
+            z-index: 5;
         }
 
         @include media-breakpoint-down(sm) {
@@ -123,7 +124,7 @@
         background: #f4f4f4;
         padding: 50px 40px;
         right: -110%;
-        z-index: 1;
+        z-index: 6;
         width: 360px;
         transition: 0.3s;
 
@@ -167,11 +168,16 @@
                 padding: 0;
             }
         }
+
+        &:hover .navigation__link {
+            color: #ef7f1a;
+        }
     }
 
     // .navigation__link
 
     &__link {
+        transition: 0.2s;
         font-size: 24px;
         text-transform: uppercase;
     }
