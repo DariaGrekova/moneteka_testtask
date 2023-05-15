@@ -1,0 +1,28 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+$grid-breakpoints: (
+    start: 0,
+    xs: 420px,
+    sm: 576px,
+    md: 992px,
+    lg: 1056px,
+    xl: 1366px,
+    xxl: 1520px,
+);
+
+@mixin scrollbar {
+    &::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    &::-webkit-scrollbar-track {
+        width: 2px;
+        background-color: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #000;
+    }
+}

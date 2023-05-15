@@ -1,0 +1,177 @@
+//scrollItems
+.js-box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+
+    &.active {
+        cursor: grab;
+    }
+}
+
+// tabs
+.tabs-section {
+}
+.tabs {
+    // .tabs__list
+
+    &__list {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        gap: 55px;
+    }
+
+    // .tabs__button
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid transparent;
+        font-weight: 700;
+        font-size: 36px;
+        color: #000;
+        user-select: none;
+        transition: color 0.2s;
+        white-space: nowrap;
+
+        &[aria-selected="true"] {
+            color: #ef7f1a;
+            text-decoration: underline;
+        }
+    }
+
+    // .tabs__container
+
+    &__container {
+    }
+}
+.sizes {
+    &__wrapper {
+        display: flex;
+        gap: 10px;
+    }
+}
+.size {
+    position: relative;
+    height: 18px;
+    // .size__input
+
+    &__input {
+        font-size: 16px;
+        width: 46px;
+        height: 18px;
+        font-weight: 700;
+        opacity: 0;
+        color: #bababa;
+
+        &:checked + .size__label {
+            color: #ef7f1a;
+            border: 1px solid #ef7f1a;
+        }
+        &:hover + .size__label {
+            border: 1px solid #ef7f1a;
+        }
+        &:disabled + .size__label {
+            opacity: 0.5;
+        }
+    }
+    // .size__label
+
+    &__label {
+        position: absolute;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        border: 1px solid #bababa;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        width: 46px;
+        height: 18px;
+        padding-top: 4px;
+        color: #bababa;
+        transition: 0.1s linear;
+        cursor: pointer;
+    }
+}
+.best-deal {
+    // .best-deal__wrapper
+
+    &__wrapper {
+    }
+
+    // .best-deal__item
+
+    &__item {
+        width: 420px;
+        padding: 12px;
+
+        &:hover .best-deal__hover {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    // .best-deal__hover
+
+    &__hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.2s;
+    }
+
+    // .best-deal__img
+
+    &__img {
+        width: 400px;
+        height: 529px;
+        background-color: #ffffff;
+        border: 1px solid #e8e8e8;
+    }
+
+    // .best-deal__content
+
+    &__content {
+        display: grid;
+        gap: 20px;
+    }
+
+    // .best-deal__name
+
+    &__name {
+    }
+
+    // .best-deal__description
+
+    &__description {
+    }
+}
+
+.hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.hover-bg {
+    background-color: #000;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}

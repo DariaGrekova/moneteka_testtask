@@ -1,0 +1,10 @@
+@import "variables"; //пишем переменные
+@import "mixins"; //пишем миксины
+@import "reset"; //сборс стилей
+@import "fonts"; //подключаем шрифты (локально)
+@import "../../node_modules/swiper/swiper.scss";
+
+//подключаем БЭМ блоки
+@import "blocks/header";
+@import "blocks/catalog-section";
+@import "blocks/tabs-section";
