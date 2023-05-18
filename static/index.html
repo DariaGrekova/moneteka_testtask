@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css?t=1684132440118">
-    <script src="js/main.js?t=1684132440118" defer></script>
+    <link rel="stylesheet" href="css/main.css?t=1684393366362">
+    <script src="js/main.js?t=1684393366362" defer></script>
 </head>
 
 <body>
@@ -56,6 +56,9 @@
                     <svg with="20" height="20" class="basket-link__icon">
                         <use xlink:href="img/icons/sprite.svg#basket"></use>
                     </svg>
+                    <div class="counter">
+                        0
+                    </div>
                 </a>
                 <div class="menu-btn">
                     <span></span><span></span><span></span>
@@ -63,9 +66,17 @@
             </div>
         </div>
     </div>
+    <div class="search-block">
+        <div class="container">
+            <div class="search-block__wrapper">
+                <input type="search" class="search-block__input">
+                <button class="search-block__button">Искать</button>
+            </div>
+        </div>
+    </div>
 </header>
     <maim class="main">
-        <section class="catalog-section">
+        <section class="catalog-section top-60">
     <div class="container">
         <div class="catalog-section__wrapper">
             <article class="banner">
@@ -177,24 +188,35 @@
                                 <img src="./img/card-img_1.png" alt="img">
                             </div>
                             <div class="best-deal__content">
-                                <h3 class="best-deal__name"></h3>
-                                <p class="best-deal__description"></p>
+                                <h3 class="best-deal__name">Кожаная юбка</h3>
+                                <p class="best-deal__description">Описание: Полосатая кофта из полосатого трикотажа, без
+                                    молнии</p>
                             </div>
-                            <div class="sizes">
-                                <div class="sizes__wrapper">
-                                    <div class="size">
-                                        <input type="radio" id="size_1" class="size__input" name="size">
-                                        <label for="size_1" class="size__label">44</label>
-                                    </div>
-                                    <div class="size">
-                                        <input type="radio" id="size_2" class="size__input" name="size">
-                                        <label for="size_2" class="size__label">46</label>
-                                    </div>
-                                    <div class="size">
-                                        <input type="radio" id="size_3" class="size__input" name="size">
-                                        <label for="size_3" class="size__label">48</label>
+                            <div class="best-deal__controls">
+                                <div class="sizes">
+                                    <div class="sizes__wrapper">
+                                        <div class="size">
+                                            <input type="radio" id="size_1" class="size__input" name="size">
+                                            <label for="size_1" class="size__label">44</label>
+                                        </div>
+                                        <div class="size">
+                                            <input type="radio" id="size_2" class="size__input" name="size">
+                                            <label for="size_2" class="size__label">46</label>
+                                        </div>
+                                        <div class="size">
+                                            <input type="radio" id="size_3" class="size__input" name="size">
+                                            <label for="size_3" class="size__label">48</label>
+                                        </div>
                                     </div>
                                     <h3 class="sizes__title">Размер</h3>
+                                </div>
+                                <div class="price">
+                                    <div class="cost">790</div>
+                                    <button class="add-to-basket">
+                                        <svg with="20" height="20" class="add-to-basket__icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -209,8 +231,11 @@
                                 <img src="./img/card-img_2.png" alt="img">
                             </div>
                             <div class="best-deal__content">
-                                <h3 class="best-deal__name"></h3>
-                                <p class="best-deal__description"></p>
+                                <h3 class="best-deal__name">Кожаная юбка</h3>
+                                <p class="best-deal__description">Описание: Полосатая кофта из полосатого трикотажа, без
+                                    молнии</p>
+                            </div>
+                            <div class="best-deal__controls">
                                 <div class="sizes">
                                     <div class="sizes__wrapper">
                                         <div class="size">
@@ -225,8 +250,17 @@
                                             <input type="radio" id="size_3" class="size__input" name="size">
                                             <label for="size_3" class="size__label">48</label>
                                         </div>
-                                        <h3 class="sizes__title">Размер</h3>
                                     </div>
+                                    <h3 class="sizes__title">Размер</h3>
+                                </div>
+                                <div class="price">
+                                    <div class="sale-cost">1199</div>
+                                    <div class="cost">790</div>
+                                    <button class="add-to-basket">
+                                        <svg with="20" height="20" class="add-to-basket__icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -241,8 +275,11 @@
                                 <img src="./img/card-img_3.png" alt="img">
                             </div>
                             <div class="best-deal__content">
-                                <h3 class="best-deal__name"></h3>
-                                <p class="best-deal__description"></p>
+                                <h3 class="best-deal__name">Кожаная юбка</h3>
+                                <p class="best-deal__description">Описание: Полосатая кофта из полосатого трикотажа, без
+                                    молнии</p>
+                            </div>
+                            <div class="best-deal__controls">
                                 <div class="sizes">
                                     <div class="sizes__wrapper">
                                         <div class="size">
@@ -257,8 +294,17 @@
                                             <input type="radio" id="size_3" class="size__input" name="size">
                                             <label for="size_3" class="size__label">48</label>
                                         </div>
-                                        <h3 class="sizes__title">Размер</h3>
                                     </div>
+                                    <h3 class="sizes__title">Размер</h3>
+                                </div>
+                                <div class="price">
+                                    <div class="sale-cost">1199</div>
+                                    <div class="cost">790</div>
+                                    <button class="add-to-basket">
+                                        <svg with="20" height="20" class="add-to-basket__icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -273,8 +319,11 @@
                                 <img src="./img/card-img_4.png" alt="img">
                             </div>
                             <div class="best-deal__content">
-                                <h3 class="best-deal__name"></h3>
-                                <p class="best-deal__description"></p>
+                                <h3 class="best-deal__name">Кожаная юбка</h3>
+                                <p class="best-deal__description">Описание: Полосатая кофта из полосатого трикотажа, без
+                                    молнии</p>
+                            </div>
+                            <div class="best-deal__controls">
                                 <div class="sizes">
                                     <div class="sizes__wrapper">
                                         <div class="size">
@@ -289,8 +338,17 @@
                                             <input type="radio" id="size_3" class="size__input" name="size">
                                             <label for="size_3" class="size__label">48</label>
                                         </div>
-                                        <h3 class="sizes__title">Размер</h3>
                                     </div>
+                                    <h3 class="sizes__title">Размер</h3>
+                                </div>
+                                <div class="price">
+                                    <div class="sale-cost">1199</div>
+                                    <div class="cost">790</div>
+                                    <button class="add-to-basket">
+                                        <svg with="20" height="20" class="add-to-basket__icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -570,12 +628,6 @@
 </section>
     </maim>
     <footer class="footer"></footer>
-<div class="search-block">
-    <div class="search-block__wrapper">
-        <input type="search" class="search-block__input">
-        <button class="search-block__button">Искать</button>
-    </div>
-</div>
 </body>
 
 </html>

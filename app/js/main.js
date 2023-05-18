@@ -1,8 +1,12 @@
 import { burger } from './scripts/burger';
+import { search } from './scripts/search';
+import { basket } from './scripts/basket';
 import { tabs } from './scripts/tabs';
 import { scrollItems } from './scripts/scrollitems';
 import { sliders } from './scripts/sliders';
 burger();
+search();
+basket();
 tabs();
 scrollItems();
 sliders();
